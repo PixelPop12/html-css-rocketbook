@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketBook |A book is all you need</title>
+    <link rel="icon" href="/images/earth.svg">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">Rocket<span>Book</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="/features/features.html">Features</a></li>
+                    <li><a href="/about/index.html">About Us</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="/contact/index.html">Contact</a></li>
+                    <li class="go-premium-cta"><a href="/product details/index.html">Buy Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">A Single Notebook is all you need</p>
+                <h1>Rocketbook Everlasting Notebook</h1>
+
+                <div class="hero-cta">
+                    <a href="/features/features.html" class="primary-cta">Buy Now</a>
+                    <a href="/video/Introducing Rocketbook Core (formerly Everlast).mp4" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="Watch a video">Watch a video
+                    </a>
+                </div>
+            </div>
+
+            <img src="/images/rocketbookimg.jpg" class="hero-img" alt="Illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Select Your Style</li>
+                <li>Scan it! and your notes last forever</li>
+                <li>Organize and share notes through our exclusive app</li>
+                <li>Colab with friends and family and share notes</li>
+                <li>Art Illustrations can be shared via online </li>
+                <li>A notebook is all you need!</li>
+            </ul>
+
+            <img src="images/girls notes.jpg" alt="rocketbook">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/man (1).png" alt="Person">
+
+                    <blockquote>"Long-time owner,and i love it.I'm a student that takes lots of notes and does lots of scratch work. Being able to easily access my handwritten notes from my phone is incredibly convenient, and the images are usually really nice."</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/man (2).png" alt="Person">
+
+                    <blockquote>"Sustainable Solution,I'm on my third week of owning a Rocketbook and I'm in love. I carry it everywhere, use it for everything from a weekly planner, monthly, and yearly habit tracker, workout tracker, work and meeting minutes, board meetings, and planning out landscaping plans!"</blockquote>
+                    <cite>- Mikel</cite>
+                </li>
+                <li>
+                    <img src="images/woman.png" alt="Person">
+
+                    <blockquote>"Love this Product,I backed Rocketbook on Kickstarter back in 2017 and have purchased more as gifts, which have been very well received. I use this notebook daily, and LOVE it."</blockquote>
+                    <cite>- Amy jaiden</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-center">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>>
+
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+
+    
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="/features/features.html">features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company Owners</h4>
+                <ul>
+                    <li><a href="/about/index.html">A.Jeshwanth</a></li>
+                    <li><a href="/about/index.html">Nishesh</a></li>
+                    <li><a href="/about/index.html">Abishek</a></li>
+                    <li><a href="/about/index.html">sidharth</a></li>
+                    <li><a href="/about/index.html">Suhas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.google.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+</body>
+</html>
